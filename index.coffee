@@ -1,20 +1,12 @@
-# Description:
-#   Returns a url to the placehold.it image of the size you entered
-#
-# Dependencies:
-#   None
-#
-# Configuration:
-#   None
-#
-# Commands:
-#   placeholder height width
-#
-# Author:
-#   janhenckens
+fs = require 'fs'
+path = require 'path'
 
-module.exports = (robot) ->
-  robot.respond /placeholder (.*) (.*)/i, (msg)->
-    width = msg.match[1]
-    height = msg.match[1]
-    msg.send "http://placehold.it/#{width}/#{height}"
+module.exports = (robot, scripts) ->
+  scriptsPath = path.resolve(__dirname, 'src')
+  fs.exists scriptsPath, (exists) ->
+    if exists
+      for script in fs.readdirSync(scriptsPath)
+        if scripts? and '*' not in scripts
+          robot.loadFile(scriptsPath, script) if script in scripts
+        else
+          robot.loadFile(scriptsPath, script)

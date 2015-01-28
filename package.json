@@ -1,6 +1,6 @@
 {
   "name": "hubot-placeholdit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A hubot script to quickly get a placehold.it image",
   "main": "index.coffee",
   "repository": {
