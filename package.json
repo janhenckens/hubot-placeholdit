@@ -1,6 +1,6 @@
 {
   "name": "hubot-placeholdit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A hubot script to quickly get a placehold.it image",
   "main": "index.coffee",
   "repository": {
@@ -14,7 +14,10 @@
     "placehold.it",
     "lorumpixel"
   ],
-  "author": "Jan Henckens <https://github.com/janhenckens>",
+  "author": {
+    "name": "Jan Henckens",
+    "email": "https://github.com/janhenckens"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/janhenckens/hubot-placeholdit/issues"
@@ -24,6 +27,6 @@
   },
   "devDependencies": {
     "hubot": "^2.7.5",
-    "hubot-mock-adapter": "^1.0.0",
+    "hubot-mock-adapter": "^1.0.0"
   }
 }
