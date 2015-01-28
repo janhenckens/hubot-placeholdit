@@ -1,5 +1,5 @@
 # Placehold.it for Hubot
-
+[![Build Status](https://travis-ci.org/janhenckens/hubot-placeholdit.svg?branch=master)](https://travis-ci.org/janhenckens/hubot-placeholdit)
 
 ## Features
 
