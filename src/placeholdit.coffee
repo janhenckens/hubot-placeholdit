@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   placeholder height width
+#   placeholder width height
 #
 # Author:
 #   janhenckens
